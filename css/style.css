@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Start navbar */
+nav.container {
+  display: flex;
+  padding: 30px 20px 30px 80px;
+}
+
+nav.container .logo {
+  display: flex;
+  align-items: center;
+}
+nav.container .logo img {
+  height: 30px;
+  width: 92px;
+}
+nav.container .searchbar form {
+  position: relative;
+}
+nav.container .searchbar form .serch-bar-btns {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+nav.container form .serch-bar-btns svg {
+  width: 25px;
+}
+
+nav.container .searchbar {
+  margin-left: 20px;
+}
+nav.container .searchbar form input {
+  width: 692px;
+  height: 42px;
+  border-radius: 25px;
+  border: 1px solid #00000014;
+  box-shadow: 0 2px 6px 0px #00000038;
+  outline: none;
+  padding: 0px 150px 0px 20px;
+  font-size: 16px;
+}
+nav.container .searchbar form input:hover {
+  box-shadow: 0 2px 10px 0px #0000003b;
+}
+nav.container .searchbar ul.option-list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+nav.container .acount-and-app-icon {
+  display: flex;
+  gap: 10px;
+  margin: 0 0 0 auto;
+}
+nav.container .acount-and-app-icon button {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+nav.container .acount-and-app-icon button span {
+  font-size: 18px;
+  color: white;
+  background-color: #78909c;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav.container .acount-and-app-icon button:hover {
+  background-color: #e2e3e3;
+}
+nav.container .acount-and-app-icon button img {
+  background-color: transparent;
+  border: none;
+  width: 40%;
+}
+/* End navbar */
+
+/* Start media query */
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 993px) {
+  nav.container {
+    flex-wrap: wrap;
+    padding-left: 20px;
+  }
+  nav.container .searchbar {
+    order: 3;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 100%;
+  }
+  nav.container .searchbar form input {
+    width: 100%;
+    padding-right: 120px;
+  }
+}
+
+/* End media query */
