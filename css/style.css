@@ -34,7 +34,7 @@ nav.container form .serch-bar-btns svg {
 }
 
 nav.container .searchbar {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 nav.container .searchbar form input {
   width: 692px;
@@ -48,11 +48,6 @@ nav.container .searchbar form input {
 }
 nav.container .searchbar form input:hover {
   box-shadow: 0 2px 10px 0px #0000003b;
-}
-nav.container .searchbar ul.option-list {
-  list-style: none;
-  display: flex;
-  gap: 10px;
 }
 
 nav.container .acount-and-app-icon {
@@ -92,6 +87,48 @@ nav.container .acount-and-app-icon button img {
   border: none;
   width: 40%;
 }
+/* ################### */
+.nav-options {
+  padding: 0px 20px 30px 202px;
+}
+.nav-options ul.option-list {
+  list-style: none;
+  display: flex;
+}
+.nav-options ul.option-list li {
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+.nav-options ul.option-list li:nth-child(9) {
+  margin-left: 145px;
+}
+.nav-options ul.option-list li:nth-child(9):hover {
+  border-radius: 20px;
+  background-color: #78909c36;
+}
+.nav-options .option-list .dropdown {
+  position: absolute;
+  top: 30px;
+  left: -10px;
+  box-shadow: 0 0 6px 1px #00000014;
+  border-radius: 10px;
+  display: none;
+}
+.nav-options .option-list .dropdown.active {
+  display: block;
+}
+.nav-options .option-list .dropdown ul {
+  list-style: none;
+}
+.nav-options .option-list .dropdown ul li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.nav-options .option-list .dropdown ul li:hover {
+  background-color: #78909c36;
+}
+
 /* End navbar */
 
 /* Start media query */
@@ -112,6 +149,15 @@ nav.container .acount-and-app-icon button img {
   nav.container .searchbar form input {
     width: 100%;
     padding-right: 120px;
+  }
+  .nav-options {
+    padding: 0px 20px 30px 10px;
+    overflow: auto;
+    white-space: nowrap;
+    overflow-x: hidden;
+  }
+  .nav-options ul.option-list li:nth-child(9) {
+    margin-left: 0px;
   }
 }
 
