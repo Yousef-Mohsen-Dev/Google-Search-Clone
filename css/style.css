@@ -89,7 +89,8 @@ nav.container .acount-and-app-icon button img {
 }
 /* ################### */
 .nav-options {
-  padding: 0px 20px 30px 202px;
+  padding: 0px 20px 0px 202px;
+  border-bottom: 1px solid #00000024;
 }
 .nav-options ul.option-list {
   list-style: none;
@@ -99,6 +100,9 @@ nav.container .acount-and-app-icon button img {
   cursor: pointer;
   padding: 10px;
   position: relative;
+}
+.nav-options ul.option-list li.active {
+  border-bottom: 3px solid black;
 }
 .nav-options ul.option-list li:nth-child(9) {
   margin-left: 145px;
