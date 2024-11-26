@@ -50,16 +50,14 @@ function changeQuickInfoPlace() {
 }
 
 // show underline in link in result-body when hover on result-header
-const resultHeader = document.querySelector(".result-header");
+const resultHeader = document.querySelectorAll(".result-header");
 const resultBodyLink = document.querySelectorAll(".result-body a");
 
-resultHeader.addEventListener("mouseover", () => {
-  resultBodyLink.forEach((e) => {
-    e.style.textDecoration = "underline";
+for (let i = 0; i < resultHeader.length; i++) {
+  resultHeader[i].addEventListener("mouseover", () => {
+    resultBodyLink[i].style.textDecoration = "underline";
   });
-});
-resultHeader.addEventListener("mouseout", () => {
-  resultBodyLink.forEach((e) => {
-    e.style.textDecoration = "none";
+  resultHeader[i].addEventListener("mouseout", () => {
+    resultBodyLink[i].style.textDecoration = "none";
   });
-});
+}
