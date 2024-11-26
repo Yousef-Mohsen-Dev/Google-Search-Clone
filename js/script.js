@@ -1,4 +1,4 @@
-// click More button to display dropdown
+// click "More" button to display dropdown
 let moreBtn = document.querySelector(
   ".nav-options ul.option-list li:nth-child(8)"
 );
@@ -48,3 +48,18 @@ function changeQuickInfoPlace() {
     }
   }
 }
+
+// show underline in link in result-body when hover on result-header
+const resultHeader = document.querySelector(".result-header");
+const resultBodyLink = document.querySelectorAll(".result-body a");
+
+resultHeader.addEventListener("mouseover", () => {
+  resultBodyLink.forEach((e) => {
+    e.style.textDecoration = "underline";
+  });
+});
+resultHeader.addEventListener("mouseout", () => {
+  resultBodyLink.forEach((e) => {
+    e.style.textDecoration = "none";
+  });
+});
