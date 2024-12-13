@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Roboto", sans-serif;
+}
+h3 {
+  font-weight: 400;
+}
 /* Start navbar */
 nav.container {
   display: flex;
@@ -139,7 +145,7 @@ nav.container .acount-and-app-icon button img {
 }
 
 /* End navbar */
-/* Start search reulte */
+/* Start search result */
 main {
   display: flex;
 }
@@ -191,7 +197,53 @@ main .search-resultes .box .result-body a:hover {
   text-decoration: underline !important;
 }
 
-/* End search reulte */
+main .quick-info {
+  margin-left: 100px;
+  margin-right: 10px;
+  position: relative;
+}
+main .quick-info::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  width: 2px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.14);
+}
+main .quick-info .section-1 {
+  margin-top: 30px;
+}
+main .quick-info .section-1 .section-wrap {
+  display: flex;
+  gap: 10px;
+}
+main .quick-info .section-1 h3 {
+  font-size: 30px;
+}
+main .quick-info .section-1 .logo-title span:first-of-type {
+  margin-right: 10px;
+}
+main .quick-info .section-1 .description-box {
+  max-width: 350px;
+  width: 100%;
+  padding: 10px 35px 10px 10px;
+  background-color: #f3f5f6;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+main .quick-info .section-1 .description-box:hover {
+  background-color: #d3d6d7;
+}
+main .quick-info .section-1 .description-box a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+main .quick-info .section-1 .description-box a span {
+  color: blue;
+}
+/* End search result */
 /* Start media query */
 @media (max-width: 1200px) {
 }
@@ -224,6 +276,10 @@ main .search-resultes .box .result-body a:hover {
     margin-left: 10px;
     margin-right: 10px;
     width: 100%;
+  }
+
+  main .quick-info {
+    margin-left: 10px;
   }
 }
 
